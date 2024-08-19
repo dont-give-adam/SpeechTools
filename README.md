@@ -2,4 +2,6 @@
 
 ## Create smooth, custom speech with just one command!
 
-![image](https://github.com/user-attachments/assets/a1caec19-7843-4847-bed2-e03949b64bff.gif)
+
+<img align="right" src="https://github.com/dont-give-adam/SpeechTools-1.0/blob/main/gif1.gif">
+Markdown magic uses comment blocks in markdown files to automatically sync or transform its contents.
