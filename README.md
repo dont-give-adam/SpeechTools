@@ -6,7 +6,7 @@
 <img align="right" width=200 src="https://github.com/dont-give-adam/SpeechTools-1.0/blob/6a5b67bb26e270b68a6ad978f43d2db2b4f06a87/villager.gif"> 
 
 ### Features Include:
- - Full control over typing speed, transformation, shake, and many more
+ - Full control over typing speed, transformation, shake, and much more
 
  - Events system allowing you to run commands and change arguments at any point
 
