@@ -1,0 +1,1 @@
+$execute run $(start_command) 
