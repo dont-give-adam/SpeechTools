@@ -53,4 +53,7 @@ If you want to add multiple events to one `on:` condition, do this: `[{on:25,com
 <br />
 <br />
 # Limitations
-As of right now, you can only have single element text, meaning you can't have one section of text in *`italic:true`* and the rest in *`italic:false`* . Instead you have to use multiple speech entities to achieve this effect.
+- As of right now, you can only have single element text, meaning you can't have one section of text in *`italic:true`* and the rest in *`italic:false`* . Instead you have to use multiple speech entities to achieve this effect.
+- If `fade_in:` is activated, the transformation will take place on tick 3 of the entity, due to inconsistencies when ran on earlier ticks.
+
+Any feedback/tips are appreciated!
