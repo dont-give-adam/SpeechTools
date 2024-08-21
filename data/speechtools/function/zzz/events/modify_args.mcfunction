@@ -8,6 +8,7 @@ $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3)
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.wait set from storage speechtools:temp event.modify_args.wait
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.typed set from storage speechtools:temp event.modify_args.typed
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.typed_delay set from storage speechtools:temp event.modify_args.typed_delay
+$data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.punctuation_delay set from storage speechtools:temp event.modify_args.punctuation_delay
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.fade_in set from storage speechtools:temp event.modify_args.fade_in
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.fade_out set from storage speechtools:temp event.modify_args.fade_out
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.start_command set from storage speechtools:temp event.modify_args.start_command
