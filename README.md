@@ -19,7 +19,7 @@ _This page is viewable in game by using the command  `/function speechtools:help
 
 ## ARGUMENTS
 
-- **`text:`**  *Raw string, no json elements. e.g: `args:{text:\"Hi there!\"}` Limitations: To use an apostrophe, you have to type `\\\\'` and to use speech marks, you have to type `\\\\'\\\\'`*
+- **`text:`**  *Raw string, no json elements. e.g: `args:{text:\"Hi there!\"}` Limitations: To use an apostrophe, you have to type `\\'` and to use speech marks, you have to type `\\'\\'`*
 - **`extra:`** *Any json elements to be attached to the text (color, font, bold etc). e.g: `args:{extra:' "bold":true,"color":"green" '}`*
 - **`duration:`** *Integer duration of the speech before disappearing. Default: 100*
 - **`fade_in:`** *Duration of how long the text scales up from 0 when spawned. Set to 0 for no interpolation. Default: 3*
