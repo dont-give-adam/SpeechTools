@@ -22,12 +22,14 @@ _This page is viewable in game by using the command  `/function speechtools:help
 - **`text:`**  *Raw string, no json elements. e.g: `args:{text:\"Hi there!\"}` Limitations: To use an apostrophe, you have to type `\\'` and to use speech marks, you have to type `\\'\\'`*
 - **`extra:`** *Any json elements to be attached to the text (color, font, bold etc). e.g: `args:{extra:' "bold":true,"color":"green" '}`*
 - **`duration:`** *Integer duration of the speech before disappearing. Default: 100*
+- **`wait:`** *Integer duration of ticks before the speech starts, or as a pause in events. Used for instances with multiple speech entities which start at different times. Default: 0*
 - **`fade_in:`** *Duration of how long the text scales up from 0 when spawned. Set to 0 for no interpolation. Default: 3*
 - **`fade_out:`** *Duration of how long the text scales down to 0 when ending. Set to 0 for no interpolation. Default: 3*
 - **`typed:`** *true | false || Text is typed out over time instead of instantly appearing. Default: true*
 - **`typed_delay:`** *Delay between typed letters, in ticks.  Default: 2*
+- **`punctuation_delay:`** *Additional tick delay when punctuation is typed (.!?:;,) Commas use half this delay.  Defaults to `typed_delay` value.*
 - **`shake:`** *Text shaking effect, higher number, more shake. Experiment with `teleport_duration` to adjust effect. Max of 50.  Default: 0*
-- **`teleport_offset:`** *String set of coordinates to teleport to. Used with teleport_duration to create a sliding effect. e.g. `args:{teleport_offset:"~ ~2 ~"}`*
+- **`teleport_offset:`** *String set of coordinates to teleport to. Used with `teleport_duration` to create a sliding effect. e.g. `args:{teleport_offset:"~ ~2 ~"}`*
 - **`transformation:`** *Same format as a display entities transformation.*
 - **`Other NBT`** *You can also put any other text_display nbt in `args{}`, e.g. `billboard:`, `background:`, `text_opacity:` etc.*
 

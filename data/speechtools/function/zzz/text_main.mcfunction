@@ -10,10 +10,7 @@ execute as @s[tag=typed] if score @s speechtools.typed >= @s speechtools.typed_m
 
 execute as @s[tag=shake] run function speechtools:zzz/shake_main
 
-
-
 execute if score @s speechtools.dur = @s speechtools.dur_max.fade_out run function speechtools:zzz/uuid {function:"speechtools:zzz/text_fade_out"}
 execute if score @s speechtools.dur >= @s speechtools.dur_max run function speechtools:zzz/text_end
 
 
-schedule function speechtools:zzz/text_main1 1t replace

@@ -13,5 +13,13 @@ execute as @s[tag=events] if score #spacetest speechtools.typed matches 1 run fu
 data remove storage speechtools:temp uuid
 
 
+$execute if score #periodtest speechtools.typed matches 0 run scoreboard players remove @s speechtools.delay $(punctuation_delay)
+$execute if score #?test speechtools.typed matches 0 run scoreboard players remove @s speechtools.delay $(punctuation_delay)
+$execute if score #!test speechtools.typed matches 0 run scoreboard players remove @s speechtools.delay $(punctuation_delay)
+$execute if score #:test speechtools.typed matches 0 run scoreboard players remove @s speechtools.delay $(punctuation_delay)
+$execute if score #;test speechtools.typed matches 0 run scoreboard players remove @s speechtools.delay $(punctuation_delay)
 
-$execute if score #periodtest speechtools.typed matches 0 run scoreboard players remove @s speechtools.delay $(typed_delay)
+
+$execute if score #,test speechtools.typed matches 0 run scoreboard players set #, speechtools.typed $(punctuation_delay)
+execute if score #,test speechtools.typed matches 0 run scoreboard players operation #, speechtools.typed /= #2 speechtools.typed
+execute if score #,test speechtools.typed matches 0 run scoreboard players operation @s speechtools.delay -= #, speechtools.typed

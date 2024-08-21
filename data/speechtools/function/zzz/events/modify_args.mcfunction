@@ -5,6 +5,7 @@ data modify storage speechtools:temp args set from storage speechtools:temp even
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.text set from storage speechtools:temp event.modify_args.text
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.extra set from storage speechtools:temp event.modify_args.extra
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.duration set from storage speechtools:temp event.modify_args.duration
+$data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.wait set from storage speechtools:temp event.modify_args.wait
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.typed set from storage speechtools:temp event.modify_args.typed
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.typed_delay set from storage speechtools:temp event.modify_args.typed_delay
 $data modify storage speechtools:main entities[{uuid1:$(1),uuid2:$(2),uuid3:$(3),uuid4:$(4)}].args.fade_in set from storage speechtools:temp event.modify_args.fade_in

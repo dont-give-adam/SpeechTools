@@ -6,6 +6,8 @@ execute if data storage speechtools:temp args.fade_in unless data storage speech
 execute if data storage speechtools:temp args{fade_out:0} run tag @s remove fade_out
 execute if data storage speechtools:temp args.fade_out unless data storage speechtools:temp args{fade_in:0} run tag @s add fade_out
 
+execute if data storage speechtools:temp args.wait run tag @s add wait
+
 execute if data storage speechtools:temp args{typed:false} run tag @s remove typed
 execute if data storage speechtools:temp args{typed:true} run tag @s add typed
 
@@ -23,6 +25,7 @@ execute if score #c speechtools.dur matches 51.. run data modify storage speecht
 $scoreboard players set @s speechtools.dur_max $(duration)
 $scoreboard players set @s speechtools.dur_max.fade_out $(duration)
 $scoreboard players remove @s[tag=fade_out] speechtools.dur_max.fade_out $(fade_out)
+execute if data storage speechtools:temp args.wait store result score @s speechtools.wait run data get storage speechtools:temp args.wait
 $scoreboard players set @s speechtools.delay_max $(typed_delay)
 
 execute if data storage speechtools:temp args.text store result storage speechtools:temp args.textlength int 1 run data get storage speechtools:temp args.text

@@ -5,10 +5,12 @@ execute unless data storage speechtools:temp args.text run data modify storage s
 execute unless data storage speechtools:temp args.extra run data modify storage speechtools:temp args.extra set value ''
 
 execute unless data storage speechtools:temp args.duration run data modify storage speechtools:temp args.duration set value 100
+execute unless data storage speechtools:temp args.wait run data modify storage speechtools:temp args.wait set value 0
 
 
 execute unless data storage speechtools:temp args.typed run data modify storage speechtools:temp args.typed set value true
 execute unless data storage speechtools:temp args.typed_delay run data modify storage speechtools:temp args.typed_delay set value 2
+execute unless data storage speechtools:temp args.punctuation_delay run data modify storage speechtools:temp args.punctuation_delay set from storage speechtools:temp args.typed_delay
 
 execute unless data storage speechtools:temp args.fade_in run data modify storage speechtools:temp args.fade_in set value 3
 execute unless data storage speechtools:temp args.fade_out run data modify storage speechtools:temp args.fade_out set value 3

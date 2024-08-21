@@ -7,10 +7,12 @@ tellraw @s [{"text":"ARGUMENTS\n","color":"aqua","bold": true,"underlined": true
 tellraw @s [{"text":"text: ","color":"aqua"},{"text":"Raw string, no json elements. e.g: args:{text:\"Hi there!\"}\n Limitations: To use an apostrophe, you have to type \\\\'\n and to use speech marks, you have to type \\\\'\\\\' \n","color":"#00b5fd"}]
 tellraw @s [{"text":"extra: ","color":"aqua"},{"text":"Any json elements to be attached to the text (color, font, bold etc). e.g: args:{extra:' \"bold\":true,\"color\":\"green\" '}\n","color":"#00b5fd"}]
 tellraw @s [{"text":"duration: ","color":"aqua"},{"text":"Integer duration of the speech before disappearing. Default: 100\n","color":"#00b5fd"}]
+tellraw @s [{"text":"wait: ","color":"aqua"},{"text":"Integer duration of ticks before the speech starts, or as a pause in events. Used for instances with multiple speech entities which start at different times. Default: 0\n","color":"#00b5fd"}]
 tellraw @s [{"text":"fade_in: ","color":"aqua"},{"text":"Duration of how long the text scales up from 0 when spawned. Set to 0 for no interpolation. Default: 3\n","color":"#00b5fd"}]
 tellraw @s [{"text":"fade_out: ","color":"aqua"},{"text":"Duration of how long the text scales down to 0 when ending. Set to 0 for no interpolation. Default: 3\n","color":"#00b5fd"}]
 tellraw @s [{"text":"typed: ","color":"aqua"},{"text":"true | false || Text is typed out over time instead of instantly appearing. Default: true\n","color":"#00b5fd"}]
 tellraw @s [{"text":"typed_delay: ","color":"aqua"},{"text":"Delay between typed letters, in ticks.  Default: 2\n","color":"#00b5fd"}]
+tellraw @s [{"text":"punctuation_delay: ","color":"aqua"},{"text":"Additional tick delay when punctuation is typed (.!?:;,) Commas use half this delay.  Defaults to typed_delay value.\n","color":"#00b5fd"}]
 tellraw @s [{"text":"shake: ","color":"aqua"},{"text":"Text shaking effect, higher number, more shake. Experiment with teleport_duration to adjust effect. Max of 50.  Default: 0\n","color":"#00b5fd"}]
 tellraw @s [{"text":"teleport_offset: ","color":"aqua"},{"text":"String set of coordinates to teleport to. Used with teleport_duration to create a sliding effect. e.g. args:{teleport_offset:\"~ ~2 ~\"}\n","color":"#00b5fd"}]
 
