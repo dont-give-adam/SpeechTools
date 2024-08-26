@@ -44,7 +44,7 @@ _This page is viewable in game by using the command  `/function speechtools:help
 - **`on:tick`** *Executes the event every tick.* 
 <br />
 
-- **`command:`** *String. Runs a command of the players choosing from the speech entity. e.g. `{on:100,command:"your:function/here"}`*
+- **`command:`** *String. Runs a command of the players choosing from the speech entity. e.g. `{on:100,command:"function your:function/here"}`*
 - **`modify_args:`** *Same format as the 'args' field, can be used to change transformation, change typing speed, etc. e.g. `{on:150,modify_args:{typed_delay:10}}`*
 - **`pause_on_tick:`** *Integer. If an `on:tick` event is set, pause it for this many ticks.*
 
