@@ -33,7 +33,8 @@ execute if data storage speechtools:temp args.text store result score @s speecht
 
 $data merge entity @s {billboard:"$(billboard)",line_width:$(line_width),text_opacity:$(text_opacity),alignment:"$(alignment)",background:$(background),see_through:$(see_through),teleport_duration:$(teleport_duration),brightness:$(brightness),view_range:$(view_range),shadow:$(shadow),shadow_strength:$(shadow_strength),shadow_radius:$(shadow_radius),default_background:$(default_background)}
 
-$data merge entity @s[tag=!typed,tag=extra] {text:'[{"text":"$(text)",$(extra)}]'}
-$data merge entity @s[tag=!typed,tag=!extra] {text:'[{"text":"$(text)"}]'}
+
+$data merge entity @s[tag=!typed,tag=extra] {text:[{"text":"$(text)",$(extra)}]}
+$data merge entity @s[tag=!typed,tag=!extra] {text:[{"text":"$(text)"}]}
 
 $execute if data storage speechtools:temp args.transformation run data merge entity @s {transformation:$(transformation),interpolation_duration:$(interpolation_duration),start_interpolation:0}

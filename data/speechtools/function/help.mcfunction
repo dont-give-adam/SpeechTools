@@ -4,7 +4,7 @@ tellraw @s [{"text":"\n\n\n\n◄(","color":"#e6e6e6","bold":true},{"text":"SPEEC
 tellraw @s [{"text":"To create a speech entity, use the command:","color":"#00b5fd"},{"text":"\n/function speechtools:create {args:{},events:[]}","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function speechtools:create {args:{},events:[]}"}},{"text":"\n\nTo customise your speech, you can add the following to the args{} field:\n"}]
 tellraw @s [{"text":"ARGUMENTS\n","color":"aqua","bold": true,"underlined": true}]
 
-tellraw @s [{"text":"text: ","color":"aqua"},{"text":"Raw string, no json elements. e.g: args:{text:\"Hi there!\"}\n Limitations: To use an apostrophe, you have to type \\\\'\n and to use speech marks, you have to type \\\\'\\\\' \n","color":"#00b5fd"}]
+tellraw @s [{"text":"text: ","color":"aqua"},{"text":"Raw string, no json elements. e.g: args:{text:\"Hi there!\"}\n To use quotation marks or apostrophes, you have to type \\\\\\\" or \\\\\\'\n","color":"#00b5fd"}]
 tellraw @s [{"text":"extra: ","color":"aqua"},{"text":"Any json elements to be attached to the text (color, font, bold etc). e.g: args:{extra:' \"bold\":true,\"color\":\"green\" '}\n","color":"#00b5fd"}]
 tellraw @s [{"text":"duration: ","color":"aqua"},{"text":"Integer duration of the speech before disappearing. Default: 100\n","color":"#00b5fd"}]
 tellraw @s [{"text":"wait: ","color":"aqua"},{"text":"Integer duration of ticks before the speech starts, or as a pause in events. Used for instances with multiple speech entities which start at different times. Default: 0\n","color":"#00b5fd"}]

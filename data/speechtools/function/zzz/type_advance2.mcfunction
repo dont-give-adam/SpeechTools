@@ -1,5 +1,8 @@
-$data modify entity @s[tag=extra] text set value '[{"text":"$(text2)",$(extra)}]'
-$data modify entity @s[tag=!extra] text set value '[{"text":"$(text2)"}]'
+$data modify entity @s[tag=extra] text set value {"text":"$(text2)",$(extra)}
+$data modify entity @s[tag=!extra] text set value [{"text":"$(text2)"}]
+
+
+
 
 #$execute as @s[tag=on_type_command] if score #spacetest speechtools.typed matches 1 run function speechtools:zzz/on_type_command {on_type_command:"$(on_type_command)"}
 
