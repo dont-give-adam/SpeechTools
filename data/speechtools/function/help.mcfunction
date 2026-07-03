@@ -1,7 +1,8 @@
 tellraw @s [{"text":"\n\n\n\n◄(","color":"#e6e6e6","bold":true},{"text":"SPEECH","color":"#00b5fd"},{"text":"TOOLS","color":"aqua"},{"text":")"},{"text":" ||","color":"gray","bold":false},{"text":" Help Page\n","color":"aqua","bold":false}]
+tellraw @s [{"text":"MODRINTH","color":"#1CDD6C",bold:true,underlined:true,click_event:{action:"open_url",url:"https://modrinth.com/datapack/speechtools"}} , {text:" | ",color:"gray",underlined:false,bold:false} , {"text":"GITHUB","color":"#5d8abd",bold:true,underlined:true,click_event:{action:"open_url",url:"https://github.com/dont-give-adam/SpeechTools"}},"\n"]
 
 
-tellraw @s [{"text":"To create a speech entity, use the command:","color":"#00b5fd"},{"text":"\n/function speechtools:create {args:{},events:[]}","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function speechtools:create {args:{},events:[]}"}},{"text":"\n\nTo customise your speech, you can add the following to the args{} field:\n"}]
+tellraw @s [{"text":"To create a speech entity, use the command:","color":"#00b5fd"},{"text":"\n/function speechtools:create {args:{},events:[]}","color":"aqua","click_event":{"action":"suggest_command","command":"/function speechtools:create {args:{},events:[]}"}},{"text":"\n\nTo customise your speech, you can add the following to the args{} field:\n"}]
 tellraw @s [{"text":"ARGUMENTS\n","color":"aqua","bold": true,"underlined": true}]
 
 tellraw @s [{"text":"text: ","color":"aqua"},{"text":"Raw string, no json elements. e.g: args:{text:\"Hi there!\"}\n To use quotation marks or apostrophes, you have to type \\\\\\\" or \\\\\\'\n","color":"#00b5fd"}]
@@ -37,3 +38,4 @@ tellraw @s [{"text":"pause_on_tick: ","color":"aqua"},{"text":"Integer. If an on
 
 tellraw @s [{"text":"Using multiple events: ","color":"aqua"},{"text":"Simply add to the events array like so:\n [{on:start,command:\"say hi\"},{on:25,modify_args: {shake:10}},{on:50,modify_args:{shake:0}}]\n\n If you want to add multiple events to one on: condition, do this: [{on:25,command:\"say hi\",pause_on_tick:5,modify_args: {typed_delay:10}}]","color":"#00b5fd"}]
 tellraw @s [{"text":"\n◄(","color":"#e6e6e6","bold":true},{"text":"S","color":"#00b5fd"},{"text":"T","color":"aqua"},{"text":")"},{"text":" -----------------------------------------------","color":"gray","bold":false}]
+tellraw @s [{"text":"MODRINTH","color":"#1CDD6C",bold:true,underlined:true,click_event:{action:"open_url",url:"https://modrinth.com/datapack/speechtools"}} , {text:" | ",color:"gray",underlined:false,bold:false} , {"text":"GITHUB","color":"#5d8abd",bold:true,underlined:true,click_event:{action:"open_url",url:"https://github.com/dont-give-adam/SpeechTools"}}]
